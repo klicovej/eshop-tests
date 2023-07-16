@@ -1,0 +1,7 @@
+{
+    "goods": [
+        {"id": 1, "name": "goodName1", "recievingDate": "2020-10-10", "price": 548},
+        {"id": 2, "name": "goodName2", "recievingDate": "2020-5-5", "price": 485},
+        {"id": 3, "name": "goodName3", "recievingDate": "2020-1-1", "price": 845}
+    ]
+}
