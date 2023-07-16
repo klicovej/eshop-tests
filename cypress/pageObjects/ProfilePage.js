@@ -1,4 +1,4 @@
-import List from "./List";
+import List from "../pageFragments/List";
 
 export default class ProfilePage {
   get storageInfo() {
