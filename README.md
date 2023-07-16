@@ -22,7 +22,7 @@
   
 3. Data používaná v testech se liší, známe je ale dopředu, tedy se mezi nimi díky `Environment Variables` můžeme přepínat také. Cypress nabízí pro práci s daty command `fixture` pomocí něhož data načteme a můžeme s nimi dále pracovat
      
-4. Webová aplikace obsahuje několik různých stránek a pro každou z nich vytvoříme třídu, která bude obsahovat elementy stránky, případně další potřebné metody (třídy jsou ve složce `cypress/pageObjects/`)
+4. Webová aplikace obsahuje několik různých stránek a pro každou z nich vytvoříme třídu, která bude obsahovat elementy stránky, případně další potřebné metody. Třídy budou ve složce `cypress/pageObjects/`, kromě této složky existuje i `cypress/pageFragments` ve které se budou nacházet třídy s elementy, které jsou použity napříč aplikací a neváží se jen ke konkrétní stránce
 
 5. V zadání je zmíněná stránku Profilu, která obsahuje informace o skladu, seznam zboží, zásob, přihrádek a dalších dat ve skladu e-shopu. Ta odpovídá třídě `cypress/pageObjects/Profile.js`. Pro jednoduchost předpokládám, že na této stránce se nachází všechny seznamy a údaje, ale pokud by platilo, že ze stránky profilu se dostanu na všechny ostatní stránky obsahující seznamy, pak bych stejnou třídu vytvořil pro každou z těchto stránek
 
