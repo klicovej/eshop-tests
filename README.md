@@ -28,6 +28,8 @@
 
 6. V rámci stránky je potřeba pracovat s několika seznamy, proto byla vytvořena ještě obecná třída `List`, pro získávání řádku seznamu
 
+7. Testovací metody pro proces příjmu a vydání zboží se nachází v souboru `cypress/e2e/test.cy.js`
+
 ## Věci ke zlepšení
 
 1. Data ze seznamů, která získáváme ať už ze souboru nebo databáze by se měla mapovat do objektů, aby práce s nimi byla snažší. Takže pro všechny skladové položky typu zboží, zásoby, příhrádka by se vytvořili třídy obsahující fieldy a metody pro práci s nimi, do kterých by se získaná data namapovala
