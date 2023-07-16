@@ -16,7 +16,7 @@ describe("Test spec", () => {
     cy.fixture(`${fixtureName}/supplies`).as("supplies");
   });
 
-  it("Receive process", () => {
+  it("Receiving process", () => {
     // Login to the app as [Manager]
     cy.loginByApi(managerUser1);
 
