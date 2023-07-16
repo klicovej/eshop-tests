@@ -5,7 +5,7 @@
 - Je několik kritérií, která je potřeba brát v potaz:
    * Plánujeme spouštět testy ve všech prohlížečích nebo se spokojíme např. s Chromem, případně které jiné prohlížeče jsou pro nás důležité?
    * Musíme počítat i s omezením některých testovacích frameworků 
-      - jako např. budemete testovat aplikaci ve více záložkách prohlížeče? jsou v aplikaci použity <iframe> elementy?
+      - jako např. budemete testovat aplikaci ve více záložkách prohlížeče? jsou v aplikaci použity `<iframe>` elementy?
    * Budou se psaní testů kromě QAs věnovat i programátoři? 
       - pak by bylo dobré jazyk pro psaní testů sjednotit s tím, který sami používají
    * Jak budeme řešit reportování výsledků?
