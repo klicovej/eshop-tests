@@ -5,7 +5,7 @@
 - Je několik kritérií, která je potřeba brát v potaz:
    * Plánujeme spouštět testy ve všech prohlížečích nebo se spokojíme např. s Chromem, případně které jiné prohlížeče jsou pro nás důležité?
    * Musíme počítat i s omezením některých testovacích frameworků 
-      - jako např. budemete testovat aplikaci ve více záložkách prohlížeče? jsou v aplikaci použity <iframe> elementy?
+      - jako např. budemete testovat aplikaci ve více záložkách prohlížeče? jsou v aplikaci použity `<iframe>` elementy?
    * Budou se psaní testů kromě QAs věnovat i programátoři? 
       - pak by bylo dobré jazyk pro psaní testů sjednotit s tím, který sami používají
    * Jak budeme řešit reportování výsledků?
@@ -28,13 +28,15 @@
 
 6. V rámci stránky je potřeba pracovat s několika seznamy, proto byla vytvořena ještě obecná třída `List`, pro získávání řádku seznamu
 
+7. Testovací metody pro proces příjmu a vydání zboží se nachází v souboru `cypress/e2e/test.cy.js`
+
 ## Věci ke zlepšení
 
-1. Třída `List` by byla `superclass` pro třídy typu `Seznam zboží`, `Seznam zásob`, `Seznam přihrádek` tyto třídy by pak měly metody specifické jen pro daný seznam
+1. Data ze seznamů, která získáváme ať už ze souboru nebo databáze by se měla mapovat do objektů, aby práce s nimi byla snažší. Takže pro všechny skladové položky typu zboží, zásoby, příhrádka by se vytvořili třídy obsahující fieldy a metody pro práci s nimi, do kterých by se získaná data namapovala
 
-2. Data ze seznamů, která získáváme ať už ze souboru nebo databáze by se měla mapovat do objektů, aby práce s nimi byla snažší. Takže pro všechny skladové položky typu zboží, zásoby, příhrádka by se vytvořili třídy obsahující fieldy a metody pro práci s nimi, do kterých by se získaná data namapovala
+2. Třída `List` by byla `superclass` pro třídy typu `Seznam zboží`, `Seznam zásob`, `Seznam přihrádek` tyto třídy by pak měly metody specifické jen pro daný seznam
 
-3. Zároveň by se vytvořila `superclass` pro uživatele a ostatní třídy typu manager, pracovník by z ní dědili, aby měli přístup pouze k údajům (fieldům, metodám), na které mají opravnění
+3. Zároveň by se vytvořila `superclass` pro uživatele a ostatní třídy typu manager, skladník by z ní dědili, aby měli přístup pouze k údajům (fieldům, metodám), na které mají opravnění
    
    
    
