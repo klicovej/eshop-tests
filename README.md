@@ -26,15 +26,15 @@
      
 4. Webová aplikace obsahuje několik různých stránek a pro každou z nich vytvoříme třídu, která bude obsahovat elementy stránky, případně další potřebné metody (třídy jsou ve složce `cypress/pageObjects/`)
 
-5. V zadání je zmíněná stránku Profilu, která obsahuje informace o skladu, seznam zboží, zásob, přihrádek a dalších dat ve skladu e-shopu. Ta odpovídá třídě `cypress/pageObjects/Profile.js`
+5. V zadání je zmíněná stránku Profilu, která obsahuje informace o skladu, seznam zboží, zásob, přihrádek a dalších dat ve skladu e-shopu. Ta odpovídá třídě `cypress/pageObjects/Profile.js`. Pro jednoduchost předpokládám, že na této stránce se nachází všechny seznamy a údaje, ale pokud by platilo, že ze stránky profilu se dostanu na všechny ostatní stránky obsahující seznamy, pak bych stejnou třídu vytvořil pro každou z těchto stránek
 
 6. V rámci stránky je potřeba pracovat s několika seznamy, proto byla vytvořena ještě obecná třída `List`, pro získávání řádku seznamu
 
 ## Věci ke zlepšení
 
-1. Třída `List` by byla `superclass` pro třídy typu `Seznam zboží`, `Seznam zásob`, `Seznam přihrádek` tyto třídy by pak měly metody specifické jen pro daný seznam
+1. Třída `List` by byla `superclass` pro třídy typu `Seznam zboží`, `Seznam zásob`, `Seznam přihrádek` tyto třídy by pak měly metody specifické jen pro daný seznam, např bychom věděli jak se jmenují názvy sloupců dané tabulky
 
-2. Data ze seznamů, která získáváme ať už ze souboru nebo databáze by se měla mapovat do objektů, aby práce s nimi byla snažší. Takže pro všechny skladové položky typu zboží, zásoby, příhrádka by se vytvořili třídy obsahující fieldy a metody pro práci s nimi.
+2. Data ze seznamů, která získáváme ať už ze souboru nebo databáze by se měla mapovat do objektů, aby práce s nimi byla snažší. Takže pro všechny skladové položky typu zboží, zásoby, příhrádka by se vytvořili třídy obsahující fieldy a metody pro práci s nimi, do kterých by se získaná data namapovala
 
 3. Zároveň by se vytvořila třída pro uživatele a ostatní třídy typu manager, pracovník by z ní dědili, aby měli přístup pouze k údajům (fieldům, metodám), na které mají opravnění
    
