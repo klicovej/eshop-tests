@@ -22,11 +22,11 @@
    - v souboru se nachází i informace s přístupovými údaji uživatelů, takže se s nimi můžeme přihlašovat jako uživatel s různými oprávněními
   
 2. Data používaná v testech se liší, známe je ale dopředu, tedy se mezi nimi díky `Environment Variables` můžeme přepínat také
-   - Cypress nabízí pro práci s data command `fixture` pomocí něhož data načteme
+   - Cypress nabízí pro práci s data command `fixture` pomocí něhož data načteme a můžeme s nimi dále pracovat
      
-4. Webová aplikace obsahuje několik různých stránek a pro každou z nich vytvoříme třídu, která bude obsahovat elementy stránky, případně další potřebné metody (třídy jsou ve složce `cypress/pageObjects/
+4. Webová aplikace obsahuje několik různých stránek a pro každou z nich vytvoříme třídu, která bude obsahovat elementy stránky, případně další potřebné metody (třídy jsou ve složce `cypress/pageObjects/`)
 
-5. V zadání je zmíněná stránku Profilu, která obsahuje informace o skladu, seznam zboží, zásob, přihrádek a dalších dat ve skladu e-shopu. Ta odpovídá třídě `pageObjects/Profile.js`
+5. V zadání je zmíněná stránku Profilu, která obsahuje informace o skladu, seznam zboží, zásob, přihrádek a dalších dat ve skladu e-shopu. Ta odpovídá třídě `cypress/pageObjects/Profile.js`
 
 6. V rámci stránky je potřeba pracovat s několika seznamy, proto byla vytvořena ještě obecná třída `List`, pro získávání řádku seznamu
 
