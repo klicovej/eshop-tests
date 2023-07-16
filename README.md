@@ -30,11 +30,11 @@
 
 ## Věci ke zlepšení
 
-1. Třída `List` by byla `superclass` pro třídy typu `Seznam zboží`, `Seznam zásob`, `Seznam přihrádek` tyto třídy by pak měly metody specifické jen pro daný seznam
+1. Data ze seznamů, která získáváme ať už ze souboru nebo databáze by se měla mapovat do objektů, aby práce s nimi byla snažší. Takže pro všechny skladové položky typu zboží, zásoby, příhrádka by se vytvořili třídy obsahující fieldy a metody pro práci s nimi, do kterých by se získaná data namapovala
 
-2. Data ze seznamů, která získáváme ať už ze souboru nebo databáze by se měla mapovat do objektů, aby práce s nimi byla snažší. Takže pro všechny skladové položky typu zboží, zásoby, příhrádka by se vytvořili třídy obsahující fieldy a metody pro práci s nimi, do kterých by se získaná data namapovala
+2. Třída `List` by byla `superclass` pro třídy typu `Seznam zboží`, `Seznam zásob`, `Seznam přihrádek` tyto třídy by pak měly metody specifické jen pro daný seznam
 
-3. Zároveň by se vytvořila `superclass` pro uživatele a ostatní třídy typu manager, pracovník by z ní dědili, aby měli přístup pouze k údajům (fieldům, metodám), na které mají opravnění
+3. Zároveň by se vytvořila `superclass` pro uživatele a ostatní třídy typu manager, skladník by z ní dědili, aby měli přístup pouze k údajům (fieldům, metodám), na které mají opravnění
    
    
    
