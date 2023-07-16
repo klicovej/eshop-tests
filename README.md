@@ -28,7 +28,7 @@
 
 6. V rámci stránky je potřeba pracovat s několika seznamy, proto byla vytvořena ještě obecná třída `List`, pro získávání řádku seznamu
 
-7. Testovací metody pro proces příjmu a vydání zboží se nachází v souboru `cypress/e2e/test.cy.js`
+7. Testovací metody pro proces příjmu a vydání zboží se nachází v souboru `cypress/e2e/test.cy.js`. V obou testovacích metodách jen přistupuju k jednotlivým seznamům položek, ale účelem je znázornit to, že lze pracovat se získanými daty a porovnávat je s tím, co se zobrazuje v aplikaci
 
 ## Věci ke zlepšení
 
